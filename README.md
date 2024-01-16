@@ -15,7 +15,7 @@ To set up this application, you'll need to have PHP and MySQL installed on your 
 1. **Clone the Repository**: First, clone this repository to your local machine or server using the following command:
 
     ```
-    git clone [repository-url]
+    git clone https://github.com/dagnisiljins/IntelligentSystemsTask.git
     ```
 
 2. **Database Setup**:

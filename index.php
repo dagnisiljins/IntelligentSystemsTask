@@ -37,7 +37,6 @@ if ($conn->connect_error) {
 if ($conn) {
     $conn->close();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -144,7 +143,5 @@ if ($conn) {
         <li>No tasks found</li>
     <?php endif; ?>
 </ul>
-
-
 </body>
 </html>

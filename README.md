@@ -2,6 +2,9 @@
 
 This is a simple yet effective Task Manager web application designed and developed by Dagnis Iljins. The application allows users to view, add, and delete tasks, using a PHP backend and a MySQL database for storage.
 
+<img width="400" alt="Screenshot 2024-01-17 at 10 08 40" src="https://github.com/dagnisiljins/IntelligentSystemsTask/assets/140745133/b5bde40c-a63b-4761-97b8-8b4e1d069af1">
+
+
 ## Features
 
 - **View Tasks**: Lists all the tasks that are currently stored in the database.

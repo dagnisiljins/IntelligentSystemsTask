@@ -8,6 +8,12 @@ This is a simple yet effective Task Manager web application designed and develop
 - **Add New Tasks**: Includes a form to add new tasks, specifying task name and description.
 - **Delete Tasks**: Each task has an associated delete option to remove tasks from the list.
 
+## Prerequisites
+
+Before installing the application, ensure you have the following:
+- PHP (version 7.3 or higher recommended)
+- MySQL (version 5.7 or higher recommended)
+
 ## Installation
 
 To set up this application, you'll need to have PHP and MySQL installed on your server. Follow these steps to get started:
@@ -19,23 +25,25 @@ To set up this application, you'll need to have PHP and MySQL installed on your 
     ```
 
 2. **Database Setup**:
-    - Create a MySQL database named `task_manager`.
-    - Create a table named `tasks` with the following structure:
-        - `id` (auto-incremented)
-        - `task_name` (VARCHAR)
-        - `task_description` (TEXT)
-        - `created_at` (DATETIME)
+   
+To set up the database for the Task Manager application, follow these steps:
 
-   You can use the following SQL command to set up the table:
+2.1. **Create the Database**:
+   - First, create a MySQL database named `task_manager`.
+   - You can do this via your MySQL client or command line:
+     ```sql
+     CREATE DATABASE task_manager;
+     ```
 
-    ```sql
-    CREATE TABLE tasks (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        task_name VARCHAR(255) NOT NULL,
-        task_description TEXT,
-        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-    );
-    ```
+2.2. **Import the Database Schema**:
+   - Use the `task_manager_schema.sql` file to create the `tasks` table with the correct structure.
+   - Execute the following command in your MySQL command line:
+     ```bash
+     mysql -u root -p task_manager < path/to/task_manager_schema.sql
+     ```
+   - If your MySQL `root` user doesn't have a password, you can omit the `-p`.
+
+This will set up the necessary table structure within your `task_manager` database, as defined in the `task_manager_schema.sql` file.
 
 3. **Configuration**: Update the database connection settings in the PHP files with your MySQL server details.
 

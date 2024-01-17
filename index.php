@@ -133,7 +133,7 @@ if ($conn) {
 <!-- List of tasks -->
 <ul>
     <?php if ($result->num_rows > 0): ?>
-        <?php while($row = $result->fetch_assoc()): ?>
+        <?php while ($row = $result->fetch_assoc()): ?>
             <li>
                 <?= htmlspecialchars($row["task_name"]) ?> - <?= htmlspecialchars($row["task_description"]) ?>
                 <a href="index.php?delete=<?= $row["id"] ?>">Delete</a>
